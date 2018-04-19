@@ -1,0 +1,203 @@
+body {
+  background-image: url(../Images/Header_footer_icons/bg.jpg) !important;
+  font-size: 14px; line-height: 18px;
+}
+.footer{ margin:0; padding: 17px 0; border-radius: 0px; height: auto; }
+.copyright{color: #FFF;
+text-align: center;
+font-size: 14pt;
+font-variant: small-caps;
+letter-spacing: 5px;
+}
+.copyright a{ color: #fff; }
+.mainbody{ padding-bottom: 20px; min-height: 100%;}
+.mainbody .row{margin: 0px;}
+
+.nav>li>a {
+    padding: 10px 15px !important;
+    line-height: 10px !important;
+	font-variant: small-caps;
+	letter-spacing: 2px;
+}
+.dropdown > .dropdown-toggle{
+    padding: 1px !important;
+	line-height: 15px !important;
+}
+.main-nav ul li{list-style: none;}
+.nav.navbar-nav{
+    margin-top: 8px;
+}
+.navbar-brand{
+	letter-spacing: 4px;
+	text-transform: uppercase;
+}
+
+ .main-nav {
+    width: auto;
+    height: auto;
+  }
+  .main-nav ul {
+     width: auto;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    line-height: 80px;
+  }
+  .main-nav ul.is-visible {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+  .main-nav li {
+    margin-left: 0.05em;
+  }
+
+  .main-nav a {
+    display: inline-block;
+    height: auto;
+    line-height: normal;
+    background: transparent;
+  }
+.make-round {
+    padding: 0.5em 0.8em !important;
+	border: 1px solid rgba(78, 240, 246, 0.6);
+	border-radius: 2em;
+	margin-right: 7px;
+  }
+
+}
+.collapse li > a{
+	font-size: 14pt;
+	font-variant: small-caps;
+}
+
+.main-nav {
+  float: right;
+  padding-right:30px;
+  width: 44px;
+  height: 100%;
+  cursor: pointer;
+}
+.main-nav ul {
+  top: 90px;
+  left: 0;
+  width: 100%;
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+.main-nav ul.is-visible {
+  -webkit-transform: translateY(50px);
+  -moz-transform: translateY(50px);
+  -ms-transform: translateY(50px);
+  -o-transform: translateY(50px);
+  transform: translateY(50px);
+}
+.main-nav a {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 5%;
+  background: #292a34;
+  border-top: 1px solid #3b3d4b;
+  color: #FFF;
+}
+.dropdown-menu {
+    background-color: #0B0614;
+	z-index: 2px;
+}
+.dropdown-menu > li > a {
+    color: #F2E8E8;
+}
+.map-doc{
+	background-color: white;
+	min-height: 50px;
+	height: auto;
+	max-height: 750px;
+	min-width: 15%;
+	width: auto;
+	max-width:25%;
+	text-align: justify;
+	margin-left: 60px;
+}
+.basics-doc ol.doc li{
+    list-style:upper-latin;
+    color:deepskyblue;
+    font-family: fantasy;
+    text-decoration: underline dotted;
+    text-decoration-color: fuchsia;
+}
+.basics-doc ol.events li{
+    list-style:lower-greek;
+    color:deepskyblue;
+    font-family: fantasy;
+    text-decoration: underline dotted;
+    text-decoration-color: fuchsia;
+}
+.basics-doc h2{
+    font-size: 16pt;
+    text-transform: uppercase;
+    font-family: cursive;
+    color:red;
+    font-style: oblique;
+    text-decoration: underline dotted black;
+}
+.basics-doc h3, .selection h3{
+    font-size: 14pt;
+    text-transform: uppercase;
+    font-family: cursive;
+    color:red;
+    font-style: oblique;
+    text-decoration: underline dotted black;
+}
+#download-doc{
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12pt;
+  font-family: lucida c`onsole;
+}
+#doc{
+  width: 90% !important;
+  margin-left: 20px;
+  height: auto;
+  min-height: 230px;
+  max-height: 500px;
+}
+#briefing{
+  font-family: bell-mt monospace;;
+  font-size: 11pt;
+  letter-spacing: 1.5px;
+  text-transform: capitalize;
+  color: green;
+  margin-top: 12px;
+}
+img#getAbout{
+  max-width: 200px;
+  max-height: 160px;
+  display: inline !important;
+  margin-left: 20px;
+  margin-right: 50px;
+}
+#download-word img{
+  margin-left: 30px;
+  width: 180px;
+  height: 70px;
+  max-height: 220px;
+  max-width: 90px;
+}
+#phone, #email{
+  font-size: 14pt;
+  font-style: bold;
+  letter-spacing: 3px;
+}
+#email{
+  margin-left: 100px;
+}

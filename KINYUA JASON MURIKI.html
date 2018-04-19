@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="Author" content="Kinyua Jason Muriki">
+		 <meta name="description" content="Crazy Startups">
+        <meta name="keywords" content="Kenya, DeKUT, GEGIS, Geo-Developer, Geomatics, GIS, Kinyua Jason Muriki">
+        <title>KINYUA JASON MURIKI</title>
+        <link href="KINYUA%20JASON%20MURIKI_files/bootstrap.css" rel="stylesheet">
+        <link href="KINYUA%20JASON%20MURIKI_files/bootstrap-social.css" rel="stylesheet">
+        <link href="KINYUA%20JASON%20MURIKI_files/font-awesome.css" rel="stylesheet">
+        <link href="KINYUA%20JASON%20MURIKI_files/style.css" rel="stylesheet">
+        <link href="KINYUA%20JASON%20MURIKI_files/site.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="KINYUA%20JASON%20MURIKI_files/page.css">
+
+		<link rel="stylesheet" href="KINYUA%20JASON%20MURIKI_files/leaflet_002.css">
+		<link rel="stylesheet" href="KINYUA%20JASON%20MURIKI_files/leaflet.css">
+		<link rel="stylesheet" href="KINYUA%20JASON%20MURIKI_files/counties.css">
+		<script src="KINYUA%20JASON%20MURIKI_files/kenyaCounties.geojson"></script>
+		<script src="KINYUA%20JASON%20MURIKI_files/leaflet-src.js"></script>
+		<script src="KINYUA%20JASON%20MURIKI_files/leaflet.js"></script>
+    </head>
+    <body>
+
+
+        <header class="navbar navbar-default navbar-static-top" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="https://github.com/kinyuajasonmuriki/kinyuajasonmuriki.github.io.git" target="_blank"><span class="fa fa-home"></span>KINYUA JASON MURIKI</a>
+                </div>
+
+
+                <div class="collapse navbar-collapse pull-right" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+					  <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><div class="make-round">startup</div></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="http://dekutstudentmothers.epizy.com/">Student Mothers Web Mapping Tool</a></li>
+<!--
+                                 <li><a href="./kenyaCounties/">Map of Kenya, Geographical Dimensions</a></li>
+				-->				 <li><a href="https://jasonmurikikinyua.bitballoon.com/">Startup Website</a></li>
+                                 <li><a href="https://github.com/Jason-Muriki/Google-Maps-Javascript-API.git">Design Materials</a></li>
+                                <li><a href="https://github.com/kinyuajasonmuriki/kinyuajasonmuriki.github.io.git">Github Publications</a></li>
+                            </ul>
+                        </li>
+						<li><a class="cd-signin make-round" href="#0">Sign in</a></li>
+						<li><a class="cd-signup make-round" href="#0">Sign up</a></li>
+						<li class="dropdown" id="github">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><div class="make-round">Github</div></a>
+                            <ul class="dropdown-menu">
+                               <li><a href="https://github.com/Jason-Muriki/Google-Maps-Javascript-API.git">.io Web Page</a></li>
+							<li><a href="https://github.com/kinyuajasonmuriki/kinyuajasonmuriki.github.io.git">.git Repository</a></li>
+                            </ul>
+                        </li>
+						<li><a class="make-round" id="modal_about" href="#about">About</a></li>
+                    </ul>
+
+                </div>
+
+
+
+            </div>
+
+        </header>
+		 
+	<div class="cd-user-modal"> <!-- this is the entire modal form, including the background -->
+		<div class="cd-user-modal-container"> <!-- this is the container wrapper -->
+			<ul class="cd-switcher">
+				<li><a id="login-existing" href="#0">Login existing</a></li>
+				<li><a id="register-new" href="#0">Register new</a></li>
+			</ul>
+
+			<div id="cd-login"> <!-- log in form -->
+				<form class="cd-form">
+					<p class="fieldset">
+						<label class="image-replace cd-email" for="signin-email">E-mail</label>
+						<input class="full-width has-padding has-border" id="signin-email" placeholder="E-mail" type="email">
+						<span class="cd-error-message">Valid Email Address Required!</span>
+					</p>
+
+					<p class="fieldset">
+						<label class="image-replace cd-password" for="signin-password">Password</label>
+						<input class="full-width has-padding has-border" id="signin-password" placeholder="Password" type="password">
+						<a href="#0" class="show-password">Show</a>
+						<span class="cd-error-message">Password Not Strong Enough!</span>
+					</p>
+
+					<p class="fieldset">
+						<input id="remember-me" checked="checked" type="checkbox">
+						<label for="remember-me">Remember me</label>
+					</p>
+
+					<p class="fieldset">
+						<input class="full-width" value="Login" type="submit">
+					</p>
+				</form>
+				
+				<p class="cd-form-bottom-message"><a href="#0">Forgot your password?</a></p>
+				<!-- <a href="#0" class="cd-close-form">Close</a> -->
+			</div> <!-- cd-login -->
+
+			<div id="cd-signup"> <!-- sign up form -->
+				<form class="cd-form">
+					<p class="fieldset">
+						<label class="image-replace cd-username" for="signup-username">Username</label>
+						<input class="full-width has-padding has-border" id="signup-username" placeholder="Username" type="text">
+						<span class="cd-error-message">Valid Username, more than 5 Char Required!</span>
+					</p>
+
+					<p class="fieldset">
+						<label class="image-replace cd-email" for="signup-email">E-mail</label>
+						<input class="full-width has-padding has-border" id="signup-email" placeholder="E-mail" type="email">
+						<span class="cd-error-message">Valid Email Address Required!</span>
+					</p>
+
+					<p class="fieldset">
+						<label class="image-replace cd-password" for="signup-password">Password</label>
+						<input class="full-width has-padding has-border" id="signup-password" placeholder="Password" type="password">
+						<a href="#0" class="show-password">Show</a>
+						<span class="cd-error-message">Password Not Strong Enough!</span>
+					</p>
+
+					<p class="fieldset">
+						<input id="accept-terms" type="checkbox">
+						<label for="accept-terms">I agree to the <a href="#0">Terms</a></label>
+					</p>
+
+					<p class="fieldset">
+						<input class="full-width has-padding" value="Create account" type="submit">
+					</p>
+				</form>
+
+				<!-- <a href="#0" class="cd-close-form">Close</a> -->
+			</div> <!-- cd-signup -->
+
+			<div id="cd-reset-password"> <!-- reset password form -->
+				<p class="cd-form-message">Lost your password? Please enter your email address. You will receive a link to create a new password.</p>
+
+				<form class="cd-form">
+					<p class="fieldset">
+						<label class="image-replace cd-email" for="reset-email">E-mail</label>
+						<input class="full-width has-padding has-border" id="reset-email" placeholder="E-mail" type="email">
+						<span class="cd-error-message">Valid Email Address Required!</span>
+					</p>
+
+					<p class="fieldset">
+						<input class="full-width has-padding" value="Reset password" type="submit">
+					</p>
+				</form>
+
+				<p class="cd-form-bottom-message"><a href="#0">Back to log-in</a></p>
+			</div> <!-- cd-reset-password -->
+			<a href="#0" class="cd-close-form">Close</a>
+		</div> <!-- cd-user-modal-container -->
+	</div> <!-- cd-user-modal -->
+    <div id="about" style="display:none;">
+	<span class="about_close"><i class="fa fa-times"></i></span>
+      <div id="content-contact">
+        <h2>contact kinyua jason muriki.</h2>
+
+        <div class="content">
+         <div class="container-fluid">
+
+         	<div class="row">
+          <span id="about-switch"><img src="KINYUA%20JASON%20MURIKI_files/about-me.png" id="getAbout" class="img-responsive"></span>
+          <span id="phone">  Phone : +254706959881</span>
+          <span id="email"> Email : jaysnmury@gmail.com </span>
+			</div>
+         </div>
+        </div>
+      </div>
+
+
+
+      <div id="content-about">
+        <h2>about kinyua jason muriki</h2>
+
+        <div class="content">
+	   <div class="row">
+	   <div class="col-lg-5  col-sm-6 col-xs-12">
+
+      <p id="briefing">Kinyua Jason Muriki is currently a Student at Dedan Kimathi University of Technology pursuing
+      Bachelor of Science in Geomatics Engineering and Geospatial Information Systems, third year of study.<br>
+      His proven capabilities are in operating most GIS and Remote Sensing Software such as ArcGIS, QGIS,
+      Erdas Imagine, Geoserver, Grass, PostgreSQL, PostGIS, and Mapserver, as well as system development in:-
+      C, C++, Java, Javascript, PhP, Mysql, PostgreSQL, PostGIS, Python,  Perl, Ruby, C# and Linux Ubuntu OS.</p>
+      <span id="contact-switch"><img src="KINYUA%20JASON%20MURIKI_files/contact-me.jpg" id="getContact" class="img-responsive img-thumbnail"></span>
+			</div>
+			<div class="col-lg-7 col-sm-6 col-xs-12">
+        <div id="embed-doc">
+        <iframe src="KINYUA%20JASON%20MURIKI_files/Kinyua%20Jason%20Muriki%20-%20CURRICULUM%20VITAE.html" id="doc"></iframe></div>
+        <div id="download-doc">
+          <div class="col-lg-6 col-xs-12">
+              <span id="download-pdf">  <a href="https://jasonmuriki.000webhostapp.com/pool/data/Jason%20Muriki%20Kinyua%20C.V.pdf" title="Download Jason's CV.pdf"><img src="KINYUA%20JASON%20MURIKI_files/download-pdf.png" class="img-responsive"></a> </span>
+          </div>
+          <div class="col-lg-6 col-xs-12">
+            <span id="download-word">  <a href="https://jasonmuriki.000webhostapp.com/pool/data/Jason%20Muriki%20Kinyua%20C.V.docx" title="Download Jason's CV.docx"><img src="KINYUA%20JASON%20MURIKI_files/Word-icon.png" class="img-responsive"></a></span>
+          </div>
+        </div>
+			</div>
+	   </div>
+
+       </div>
+        </div>
+      </div>
+
+  
+
+        <div class="container-fluid mainbody">
+
+            <div class="clearfix"></div>
+            <div class="clearfix"></div>
+<div class="container-fluid">
+<div class="row">
+	<div class="col-lg-8 col-sm-12">
+	<div id="map" class="responsive leaflet-container leaflet-fade-anim" style="position: relative;" tabindex="0"><div class="leaflet-map-pane" style="transform: translate3d(0px, 0px, 0px);"><div class="leaflet-tile-pane"></div><div class="leaflet-objects-pane"><div class="leaflet-shadow-pane"></div><div class="leaflet-overlay-pane"></div><div class="leaflet-marker-pane"></div><div class="leaflet-popup-pane"></div></div></div><div class="leaflet-control-container"><div class="leaflet-top leaflet-left"><div class="leaflet-control-zoom leaflet-bar leaflet-control"><a class="leaflet-control-zoom-in" href="#" title="Zoom in">+</a><a class="leaflet-control-zoom-out" href="#" title="Zoom out">-</a></div></div><div class="leaflet-top leaflet-right"></div><div class="leaflet-bottom leaflet-left"></div><div class="leaflet-bottom leaflet-right"><div class="leaflet-control-attribution leaflet-control"><a href="http://jasonmuriki.netau.com/" title="Enthusiastic and Passionate Geo-Developer.">Kinyua Jason Muriki</a></div></div></div></div>
+	</div>
+	<div class="col-lg-4 col-sm-12 map-doc">
+	<div class="basics-doc">Documentation.</div>
+	<div class="selection">Selected Items</div>    
+	</div>
+</div>
+</div>
+
+</div>
+
+
+
+<footer>
+    <div class="navbar navbar-inverse footer">
+        <div class="container-fluid">
+            <div class="copyright">
+                <a href="http://jasonkinyua.net23.net/" target="_blank">© Kinyua Jason Muriki - 2018</a>.  All rights reserved
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+<script src="KINYUA%20JASON%20MURIKI_files/jquery-2.js"></script>
+<script src="KINYUA%20JASON%20MURIKI_files/bootstrap.js"></script>
+<script src="KINYUA%20JASON%20MURIKI_files/dropdown-hover.js"></script>
+<script src="KINYUA%20JASON%20MURIKI_files/modernizr.js"></script>
+<script src="KINYUA%20JASON%20MURIKI_files/main.js"></script>
+<script src="KINYUA%20JASON%20MURIKI_files/layerManip.js"></script>
+<script type="text/javascript" src="KINYUA%20JASON%20MURIKI_files/about.js"></script><div id="window_float"></div>
+<div style="text-align: right;position: fixed;z-index:9999999;bottom: 0; width: 100%;cursor: pointer;line-height: 0;display:block !important;"><a title="000webhost logo" rel="nofollow" target="_blank" href="https://www.000webhost.com/free-website-sign-up?utm_source=000webhostapp&amp;utm_campaign=000_logo&amp;utm_campaign=ss-footer_logo&amp;utm_medium=000_logo&amp;utm_content=website"><img src="KINYUA%20JASON%20MURIKI_files/footer-powered-by-000webhost-white2.png" alt="000webhost logo"></a></div>
+
+</body></html>
